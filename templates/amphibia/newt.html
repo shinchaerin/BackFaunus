@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/birds.css') }}">
+</head>
+
+    <body bgcolor="#9DDCCE">
+        <div class="wrap">
+            <div style="position:absolute; left:600; top:20;">
+                <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+            </div>
+            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{ id }}님 <button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+            <div class="back-wrap">
+                <div class="ground-wrap">
+                    <img src="{{ url_for('static', filename='image/newt.png') }}" class="I-img">
+                    <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                        <div class="font">· 이름 : <font size="5"><B>영원(Newt)</B></font><br>
+                            · 수명 : 평균 70년<br>
+                            · 크기 : 12~20cm<br>
+                            · 먹이 : 새, 뱀, 개구리<br>
+                            · 서식지 : 산지, 동굴, 연목, 숲속, 덤불<br>
+                            · 부연 설명 : 도롱뇽의 일종이지만 반대로 도롱뇽이 영원과에 속하지는 않습니다.<br>
+                            번식기가 되면 올챙이 시기를 지나면서 퇴화되었던 지느러미가 재생되며 번식기가 끝날 때 까지 물 밖으로 나오지 않는 특징이 있다.<br>
+                            그리고 10년 동안 아무것도 먹지 않아도 살아갈 수 있는 동물입니다.<br>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                    <a href="/amphibia/narrowmouthfrog"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+                </div>
+                <a href="/amphibia/salamander"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+            </div>
+        </div>
+    </body>
+</html>

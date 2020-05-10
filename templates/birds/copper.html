@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/birds.css">
+</head>
+
+<body bgcolor="#9DDCCE">
+    <div class="wrap">
+        <div style="position:absolute; left:600; top:20;"><a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini">
+        </div></a>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div class="back-wrap">
+            <div class="ground-wrap">
+                <img src="{{ url_for('static', filename='image/copper.png') }}" class="I-img">
+                <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                    <div class="font">· 이름 : <font size="5"><B>직박구리(Copper)</B></font><br>
+                        · 수명 : 알 수 없음<br>
+                        · 크기 : 20~27cm<br>
+                        · 먹이 : 곤충, 열매<br>
+                        · 서식지 : 전국<br>
+                        · 부연 설명 :
+                        한국에서 흔히 볼 수 있는 텃새이다.<br>
+                        영역권을 다투거나 동료를 부를 때의 소리는 매우 시끄러운 반면,<br>
+                        서로 사랑을 나눌 때 내는 소리는 매우 예쁘다고 한다.<br>
+                        한 마리가 울기 시작하면 다른 개체도 울면서 모여드는 습성이 있고,<br>
+                        높은 곳에서 비행하는 습성이 있다.<br>
+                        몸통은 회색이며 뺨에 갈색 반점이 있고 배에 무늬가 있다.<br>
+                        모성애가 강한 새이기 때문에 새끼 새를 유독 아낀다.<br>
+                        울음소리가 악기 연주하듯 아름답다고 한다.
+                    </div>
+                </div>
+            </div>
+            <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                <a href="/birds/commonheron"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+            </div>
+            <a href="/birds/kingfisher"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/birds.css">
+</head>
+
+<body bgcolor="#9DDCCE">
+    <div class="wrap">
+        <div style="position:absolute; left:600; top:20;">
+            <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+        </div>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{ id }}님 <button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div class="back-wrap">
+            <div class="ground-wrap">
+                <img src="{{ url_for('static', filename='image/toad.png') }}" class="I-img">
+                <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                    <div class="font">· 이름 : <font size="5"><B>두꺼비(Toad))</B></font><br>
+                    · 수명 : 평균 30년<br>
+                    · 크기 : 80~170mm<br>
+                    · 먹이 : 잠자리, 나방, 메뚜기와 같은 곤충, 작은 새, 박쥐 등등<br>
+                    · 서식지 : 습기가 많거나 그늘진 곳<br>
+                    · 부연 설명 : 
+                    개구리와 달리 잘 뛰지 못하며 보통 엉금엉금 기어 다닌다.<br>
+                    몸빛이 다양하고 색깔은 다갈색, 황토색, 적갈색 등을 띤다.<br>
+                    온몸에는 돌기가 나 있으며, 암컷은 수컷에 비해 몸집이 크고 다리가 길며 입 주변에는 검은 선이 있다.<br>
+                    그리고 두꺼비는 피부에 독이 있기 때문에 함부로 먹으면 안 된다.
+                    </div>
+                </div>
+            </div>
+            <a href="/amphibia/bullfrog"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+        </div>
+    </div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+
+</html>

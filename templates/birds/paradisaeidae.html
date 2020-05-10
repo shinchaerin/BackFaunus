@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/birds.css">
+</head>
+
+<body bgcolor="#9DDCCE">
+    <div class="wrap">
+        <div style="position:absolute; left:600; top:20;">
+            <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+        </div>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div class="back-wrap">
+            <div class="ground-wrap">
+                <img src="{{ url_for('static', filename='image/paradisaeidae.png') }}" class="I-img">
+                <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                    <div class="font">· 이름 : <font size="5"><B>극락새(Paradisaeidae)</B></font><br>
+                        · 수명 : 20~30년<br>
+                        · 크기 : 33~100cm<br>
+                        · 먹이 : 열매, 곤충, 개구리, 도마뱀<br>
+                        · 서식지 : 오스트레일리아, 인도네시아<br>
+                        · 부연 설명 :
+                        종마다 다양한 생김새를 가지고 있지만, 공통점은 꽃처럼 하나같이 화려하고 아름답다는 것이다.<br>
+                        참새 정도의 크기도 있지만 비둘기만 한 것까지 크기도 다양하며 세상에서 가장 아름다운 새라고 불린다.<br>
+                        화려한 깃털 때문에 장식용으로 많이 사냥 당했고, 화려한 깃털만 필요했기에 다리를 잘라서 가공했다.<br>
+                        그 이후로 이 새는 하늘에서만사는 새, 천국의 새 극락조라고 불러지게 되었다.
+                    </div>
+                </div>
+            </div>
+            <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                <a href="/birds/hummingbird"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+            </div>
+            <a href="/birds/swallow"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+        </div>
+    </div>
+</body>
+
+</html>

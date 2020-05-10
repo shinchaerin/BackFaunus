@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/birds.css') }}">
+</head>
+
+    <body bgcolor="#9DDCCE">
+        <div class="wrap">
+            <div style="position:absolute; left:600; top:20;">
+                <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+            </div>
+            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{ id }}님 <button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+            <div class="back-wrap">
+                <div class="ground-wrap">
+                    <img src="{{ url_for('static', filename='image/ranaamurensis.png') }}" class="I-img">
+                    <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                        <div class="font">· 이름 : <font size="5"><B>아무르산개구리(ranaamurensis))</B></font><br>
+                            · 수명 : 평균 3년<br>
+                            · 크기 : 2~2.5cm<br>
+                            · 먹이 : 모기, 지렁이 등 작은 곤  충들<br>
+                            · 서식지 : 산지나 평지의 습한 곳<br>
+                            · 부연 설명 : 등은 갈색 또는 올리브 색 바탕에 검은 점무늬를 띠고 있다.<br>
+                                          머리는 길고, 주둥이는 약간 뾰족한데, 눈과 코 사이에는 검은색의 점이 불규칙하게 흩어져 있다.<br>
+                                          뒷다리 발가락의 물갈퀴는 다른 개구리들에 비해 작다.<br>
+                                          알의 수는 250~4000개이다.<br>
+                                          알 덩어리는 불규칙한 작은 덩어리를 이루며 30~60개의 알을 포함하며 연못이나 고인물의 수표 등에 부착시킨다.
+                        </div>
+                    </div>
+                </div>
+                <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                    <a href="/amphibia/treefrog"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+                </div>
+                <a href="/amphibia/pelophylax"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+            </div>
+        </div>
+    </body>
+</html>

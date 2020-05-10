@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>파우누스</title>
+        <meta chareset="UTF-8">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/birds.css') }}">
+    </head>
+
+    <body bgcolor="#9DDCCE">
+        <div class="wrap">
+            <div style="position:absolute; left:600; top:20;">
+                <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+            </div>
+
+            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+
+            <div class="back-wrap">
+                <div class="ground-wrap">
+                    <img src="{{ url_for('static', filename='image/leopardfrog.png') }}" class="I-img">
+                    <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                        <div class="font">· 이름 : <font size="5"><B>표범개구리(Leopard frog)</B></font><br>
+                            · 수명 : 2~4년<br>
+                            · 크기 : 7~12cm(성숙한 암컷은 수컷보다 큼)<br>
+                            · 먹이 : 달팽이, 개미, 귀뚜라미, 작은 새 등<br>
+                            · 서식지 : 습지, 호수, 하천, 연못 등 습한 곳<br>
+                            · 부연 설명 : 피부에 있는 반점들이 표범과 닮아서 표범개구리라는 이름이 붙었습니다.<br>
+                            그리고 개구리 중에서도 큰 개구리에 포함되어있습니다.<br>
+                            6월 봄에 번식을 하며 물에 약 6500알 정도를 낳는다. 
+                        </div>
+                    </div>
+                </div>
+                <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                    <a href="/amphibia/glandirana"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+                </div>
+                <a href="/amphibia/narrowmouthfrog"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+            </div>
+        </div>
+    </body>
+</html>

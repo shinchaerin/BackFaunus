@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>파우누스</title>
+        <meta chareset ="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    </head>
+
+    <body bgcolor="#9DDCCE">
+        <div class="wrap">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='image/mini.png') }}" class="mini" />
+            </div>
+
+            <div class="form-wrap">
+                <div class="button-wrap">
+                    <div id="btn"></div>
+                    <button type="button" class="togglebtn" onclick="login()">로그인</button>
+                    <button type="button" class="togglebtn" onclick="register()">회원가입</button>
+                </div>
+
+                <!-- <form id="login" action="main.html" class="input-group" method="POST"> -->
+
+                <form id="login" class="input-group" method="POST">
+                    {{lform.csrf_token}}
+
+                    <div class="form-group">
+                        {{lform.id.label("아이디")}}
+                        {{lform.id(class="input-field", placeholder="아이디")}}
+                    </div>
+
+                    <div class="form-group">
+                        {{lform.pw.label("비밀번호")}}
+                        {%if lform.pw.errors%}
+                        {{lform.pw.errors.0}}
+                        <!--0 : 첫번째 에러메시지를 출력 하겠다 -->
+                        {%endif%}
+                        {{lform.pw(class="input-field", placeholder="비밀번호")}}
+                    </div>
+
+                    <!--<input type="text" class="input-field" placeholder="ID" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span> -->
+                    <button type="submit" class="submit">로그인</button>
+
+                </form>
+
+                <div class="form-group">
+                    <form id="register" class="input-group" method="POST">
+
+                        {{rform.csrf_token}}
+
+                        <div class="form-group">
+                            {{rform.id.label("아이디")}}
+                            {%if rform.id.errors%}
+                            {{rform.id.errors.0}}
+                            {%endif%}
+                            {{rform.id(class="input-field", placeholder="아이디")}}
+                        </div>
+
+                        <div class="form-group">
+                            {{rform.pw.label("비밀번호")}}
+                            {{rform.pw(class="input-field", placeholder="비밀번호")}}
+                        </div>
+
+                        <!-- <input type="text" class="input-field" placeholder="ID" required>
+                        <input type="email" class="input-field" placeholder="Email" required>
+                        <input type="password" class="input-field" placeholder="Password" required> -->
+                        <input type="checkbox" class="checkbox"><span>Terms and conditions</span>
+                        <button type="submit" class="submit">회원가입</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
+    </body>
+</html>

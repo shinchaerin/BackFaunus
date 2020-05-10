@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/birds.css">
+</head>
+
+<body bgcolor="#9DDCCE">
+    <div class="wrap">
+        <div style="position:absolute; left:600; top:20;"><a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini">
+        </div></a>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div class="back-wrap">
+            <div class="ground-wrap">
+                <img src="{{ url_for('static', filename='image/owl.png') }}" class="I-img">
+                <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                    <div class="font">· 이름 : <font size="5"><B>올빼미(Owl)</B></font><br>
+                        · 수명 : 5~18년<br>
+                        · 크기 : 37~46cm<br>
+                        · 먹이 : 쥐, 개구리, 뱀, 도마뱀, 두더지, 곤충<br>
+                        · 서식지 : 아시아, 유럽, 소림지<br>
+                        · 부연 설명 :
+                        대개 갈색 또는 회색이며 거주지는 보통 나무 구멍이다.<br>
+                        나무의 구멍 속을 둥지로 삼아 알과 새끼를 보호한다.<br>
+                        텃세가 매우 강하여 어린 올빼미는 부모가 죽고 나면 자신의 텃세권을 마련하지 못하면 굶주리기도 한다.<br>
+                        낮이 아닌 밤에 활동하는 야행성 맹금류이다.
+                    </div>
+                </div>
+            </div>
+            <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                <a href="/birds/parrot"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+            </div>
+            <a href="/birds/hummingbird"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+        </div>
+    </div>
+</body>
+
+</html>

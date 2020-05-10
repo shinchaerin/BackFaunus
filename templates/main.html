@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/main.css') }}">
+</head>
+
+    <body bgcolor="#9DDCCE">
+        <div class="wrap">
+            <div style="position:absolute; left:600; top:20;">
+                <a href="/main">
+                    <img src="{{ url_for('static', filename='image/mini.png') }}" class="mini" />
+                </a>
+            </div>
+
+            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+
+            <div class="back-wrap">
+                <div class="img-m">
+
+                    <a href="/mammalia/thompsongazelle">
+                        <img src="{{ url_for('static', filename='image/mammal.png') }}" onmouseover="this.src='{{ url_for('static', filename='image/mammalA.png') }}'"
+                             onmouseout="this.src='{{ url_for('static', filename='image/mammal.png') }}'" width="500" height="300">
+                    </a>
+
+                    <a href="/birds/parrot">
+                        <img src="{{ url_for('static', filename='image/birds.png') }}" onmouseover="this.src='{{ url_for('static', filename='image/birdsA.png') }}'"
+                             onmouseout="this.src='{{ url_for('static', filename='image/birds.png') }}'" width="500" height="300">
+                    </a>
+
+                    <br><br><br>
+
+                    <a href="/reptile/Basilisklizard">
+                        <img src="{{ url_for('static', filename='image/reptile.png') }}" onmouseover="this.src='{{ url_for('static', filename='image/reptileA.png') }}'"
+                             onmouseout="this.src='{{ url_for('static', filename='image/reptile.png') }}'" width="500" height="300">
+                    </a>
+
+                    <a href="/amphibia/toad">
+                        <img src="{{ url_for('static', filename='image/amphibian.png') }}" onmouseover="this.src='{{ url_for('static', filename='image/amphibianA.png') }}'"
+                             onmouseout="this.src='{{ url_for('static', filename='image/amphibian.png') }}'" width="500" height="300">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

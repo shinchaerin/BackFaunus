@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/birds.css">
+</head>
+
+<body bgcolor="#9DDCCE">
+    <div class="wrap">
+        <div style="position:absolute; left:600; top:20;">
+            <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+        </div>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div class="back-wrap">
+            <div class="ground-wrap">
+                <img src="{{ url_for('static', filename='image/woodpecker.png') }}" class="I-img">
+                <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                    <div class="font">· 이름 : <font size="5"><B>딱따구리(Woodpecker)</B></font><br>
+                        · 수명 : 30년<br>
+                        · 크기 : 14~53cm<br>
+                        · 먹이 : 곤충 및 유충, 나무 열매, 수액<br>
+                        · 서식지 : 동남아시아, 아프리카<br>
+                        · 부연 설명 :
+                        나무를 쪼아 먹는 독특한 새이다.
+                        부리로 둥지를 짓고, 나무에 구멍을 내 곤충을 잡아 먹고, 두꺼운 나무를 두드려 수액을 먹을 정도로 튼튼하다.<br>
+                        보통 하루에 최대 1만2000회까지 나무를 쪼며, 10cm나 되는 혀에 가시가 달려 곤충을 쉽게 핥아 먹을 수 있다.<br>
+                        깃털 색상은 검은색, 흰색, 빨간색 등 다양하다.<br>
+                        발가락이 앞쪽과 뒤쪽으로 각각 2개 있기 때문에 효율적으로 나무를 잡고 매달릴 수 있고,<br>
+                        목의 근육과 척추가 강하고 유연해서 끊임없이 부리로 나무를 쪼아도 견딜 수가 있다.
+                    </div>
+                </div>
+            </div>
+            <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                <a href="/birds/swallow"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+            </div>
+            <a href="/birds/commonheron"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+        </div>
+    </div>
+</body>
+
+</html>

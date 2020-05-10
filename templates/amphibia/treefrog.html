@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/birds.css') }}">
+</head>
+
+    <body bgcolor="#9DDCCE">
+        <div class="wrap">
+            <div style="position:absolute; left:600; top:20;">
+                <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+            </div>
+            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{ id }}님 <button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+            <div class="back-wrap">
+                <div class="ground-wrap">
+                    <img src="{{ url_for('static', filename='image/treefrog.png') }}" class="I-img">
+                    <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                        <div class="font">· 이름 : <font size="5"><B>청개구리(treefrog))</B></font><br>
+                            · 수명 : 10년<br>
+                            · 크기 : 2~4cm<br>
+                            · 먹이 : 곤충 등등(자신보다 작은 모든 동물들)<br>
+                            · 서식지 : 축축하고 습한 곳<br>
+                            · 부연 설명 :
+                            청개구리는 주로 수컷은 4~5월, 암컷은 6~8월에 출현한다.<br>
+                            수컷은 턱밑에 울음 주머니가 있어서 비가 오기 전에 이 주머니에 공기를 넣어 큰 소리로 요란하게 운다.<br>
+                            비가 오기 전에는 습기가 증가해서 호흡이 편해지기 때문이다.
+                        </div>
+                    </div>
+                </div>
+                <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                    <a href="/amphibia/bullfrog"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+                </div>
+                <a href="/amphibia/ranaamurensis"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+            </div>
+        </div>
+    </body>
+</html>

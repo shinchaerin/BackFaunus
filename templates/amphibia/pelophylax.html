@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/birds.css') }}">
+</head>
+
+    <body bgcolor="#9DDCCE">
+        <div class="wrap">
+            <div style="position:absolute; left:600; top:20;"><a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini">
+            </div></a>
+            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{ id }}님 <button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+            <div class="back-wrap">
+                <div class="ground-wrap">
+                    <img src="{{ url_for('static', filename='image/pelophylax.png') }}" class="I-img">
+                    <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                        <div class="font">· 이름 : <font size="5"><B>참개구리(Pelophylax nigromaculatus)</B></font><br>
+                            · 수명 : 8~9년<br>
+                            · 크기 : 6~9cm(암컷이 수컷보다 큼)<br>
+                            · 먹이 : 곤충류, 거미, 지네<br>
+                            · 서식지 : 평지의 논<br>
+                            · 부연 설명 : 참개구리의 다른 이름은 논개구리라고도 한다.<br>
+                            암컷의 등면에는 흰색 바탕에 불규칙하게 이어지는 큰 무늬가 있고, 수컷은 황색을 띤 갈색이고 검은색 무늬가 거의 없다.<br>
+                            그리고 수컷은 턱의 기부에 좌우 한쌍의 울음주머니가 있다.<br>
+                            4~6월에는 논, 연못 등에 하나의 알덩어리에 1000개의 정도의 알들을 산란한다.
+                        </div>
+                    </div>
+                </div>
+                <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                    <a href="/amphibia/ranaamurensis"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+                </div>
+                <a href="/amphibia/glandirana"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>파우누스</title>
+    <meta chareset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/birds.css">
+</head>
+
+<body bgcolor="#9DDCCE">
+    <div class="wrap">
+        <div style="position:absolute; left:600; top:20;">
+            <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+        </div>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div class="back-wrap">
+            <div class="ground-wrap">
+                <img src="{{ url_for('static', filename='image/flamingos.png') }}" class="I-img">
+                <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
+                    <div class="font">· 이름 : <font size="5"><B>홍학(Flamingos</B></font><br>
+                        · 수명 : 15~20년<br>
+                        · 크기 : 90cm~150cm<br>
+                        · 먹이 : 개구리, 새우<br>
+                        · 서식지 : 전국의 호수나 습지, 바닷가<br>
+                        · 부연 설명 :
+                        목이 길고 주둥이는 중간쯤에서 급히 아래쪽으로 구부러져 있다.<br>
+                        발에 물갈퀴가 있어 물 속을 긴 다리로 오가며 개구리나 새우를 잡아먹는다.<br>
+                        몸 색깔은 붉은색에서 옅은 분홍색까지 다양하고, 날개 끝은 검은색이다.<br>
+                        부리의 가장자리에는 빗살 모양의 여과기(걸러내는 장치)가 있어,<br>
+                        물 속에서 먹이를 찾을 때 진흙이나 모래를 거를 수 있다.<br>
+                        수천 마리가 함께 무리지여 집단을 이루어 생활하며, 둥지는 진흙을 쌓아 올려 만든다.
+                    </div>
+                </div>
+            </div>
+            <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
+                <a href="/birds/copper"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
+            </div>
+            <a href="/birds/flamingos"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+        </div>
+    </div>
+</body>
+
+</html>
