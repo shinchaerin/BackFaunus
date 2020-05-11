@@ -2,18 +2,19 @@
 
 <head>
     <title>파우누스</title>
-    <mata chareset="UTF-8">
+    <meta chareset="UTF-8">
         <link rel="stylesheet" href="../../static/css/mammalia.css">
 </head>
 
     <body bgcolor="#9DDCCE">
         <div class="wrap">
-            <div style="position:absolute; left:600; top:20;"><a href="../html/main.html"><img src="../../static/image/mini.png" class="mini">
-            </div></a>
-            <div style="font-size: 50%; position:absolute; right:343; top:30;">(백엔드 애들이 받아올 사용자 아이디)님&nbsp;로그아웃</div>
+            <div style="position:absolute; left:600; top:20;">
+                <a href="/main"><img src="{{url_for('static', filename='image/mini.png') }}" class="mini"></a>
+            </div>
+            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
             <div class="back-wrap">
                 <div class="ground-wrap">
-                    <img src="../../static/image/sloth.jpg" class="I-img">
+                    <img src="{{ url_for('static', filename='image/sloth.jpg') }}" class="I-img">
                     <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
                         <div class="font">· 이름 : <font size="5"><B>나무늘보(Sloth)</B></font><br>
                             · 수명 : 10~30년<br>
@@ -21,16 +22,18 @@
                             · 먹이 : 과일, 나뭇가지, 나뭇잎, 새싹<br>
                             · 서식지 : 중앙아메리카 및 남아메리카에 분포<br>
                             · 부연 설명 :
-                            현존하는 나무늘보들은 잡식성으로서 주로 식물의 싹이나 부드러운 가지, 잎 따위를 먹지만 곤충이나 도마뱀 혹은 죽은 동물의 고기를 먹기도 한다.<br>
-                            나무늘보들은 아주 크고 특수화되고 느리게 움직이는, 여러 구획으로 나뉜 위를 갖고 있는데 이 위 속에 사는 박테리아들이 나뭇잎을 분쇄한다.<br>
+                            현존하는 나무늘보들은 잡식성으로서 주로 식물의 싹이나 부드러운 가지,<br>
+                            잎 따위를 먹지만 곤충이나 도마뱀 혹은 죽은 동물의 고기를 먹기도 한다.<br>
+                            나무늘보들은 아주 크고 특수화되고 느리게 움직이는,<br>
+                            여러 구획으로 나뉜 위를 갖고 있는데 이 위 속에 사는 박테리아들이 나뭇잎을 분쇄한다.<br>
                             잘 먹은 나무늘보의 경우, 몸무게의 2/3가 위 속의 내용물이며 이것의 소화 과정은 한 달 이상이 걸리기도 한다.
                         </div>
                     </div>
                 </div>
                 <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
-                    <a href="inermis.html"><img src="../../static/image/next2.png" width="150"></a>
+                    <a href="/mammalia/inermis"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
                 </div>
-                <a href="raccoondog.html"><img src="../../static/image/next.png" class="next"></a>
+                <a href="/mammalia/raccoondog"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
             </div>
         </div>
     </body>

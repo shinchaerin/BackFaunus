@@ -55,11 +55,134 @@ def logout():
 
 
 
+@app.route('/mammalia/arcticfox', methods=['GET','POST'])
+def arcticfox():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/arcticfox.html', id=id)
+
+@app.route('/mammalia/squirrel', methods=['GET','POST'])
+def squirrel():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/squirrel.html', id=id)
+
+@app.route('/mammalia/spectacledbear', methods=['GET','POST'])
+def spectacledbear():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/spectacledbear.html', id=id)
+
 @app.route('/mammalia/thompsongazelle', methods=['GET','POST'])
 def thompsongazelle():
     if 'id' in session: #세션 내에 email이 있는지 확인
         id = session.get('id', None)
     return render_template('/mammalia/thompsongazelle.html', id=id)
+
+@app.route('/mammalia/inermis', methods=['GET','POST'])
+def inermis():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/inermis.html', id=id)
+
+@app.route('/mammalia/baboon', methods=['GET','POST'])
+def baboon():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/baboon.html', id=id)
+
+@app.route('/mammalia/sloth', methods=['GET','POST'])
+def sloth():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/sloth.html', id=id)
+
+@app.route('/mammalia/jaguar', methods=['GET','POST'])
+def jaguar():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/jaguar.html', id=id)
+
+@app.route('/mammalia/raccoondog', methods=['GET','POST'])
+def raccoondog():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/raccoondog.html', id=id)
+
+@app.route('/mammalia/marten', methods=['GET','POST'])
+def marten():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/mammalia/marten.html', id=id)
+
+
+
+
+
+@app.route('/reptile/basilisklizard', methods=['GET','POST'])
+def basilisklizard():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/basilisklizard.html', id=id)
+
+@app.route('/reptile/blackmamba', methods=['GET','POST'])
+def blackmamba():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/blackmamba.html', id=id)
+
+@app.route('/reptile/inlandtaipan', methods=['GET','POST'])
+def inlandtaipan():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/inlandtaipan.html', id=id)
+
+@app.route('/reptile/greentreepython', methods=['GET','POST'])
+def greentreepython():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/greentreepython.html', id=id)
+
+@app.route('/reptile/saltwatercrocodile', methods=['GET','POST'])
+def saltwatercrocodile():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/saltwatercrocodile.html', id=id)
+
+@app.route('/reptile/nilecrocodile', methods=['GET','POST'])
+def nilecrocodile():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/nilecrocodile.html', id=id)
+
+@app.route('/reptile/dwarfcrocodile', methods=['GET','POST'])
+def dwarfcrocodile():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/dwarfcrocodile.html', id=id)
+
+@app.route('/reptile/galapagostortoise', methods=['GET','POST'])
+def galapagostortoise():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/galapagostortoise.html', id=id)
+
+@app.route('/reptile/leopardtortoise', methods=['GET','POST'])
+def leopardtortoise():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/leopardtortoise.html', id=id)
+
+@app.route('/reptile/hornedlizard', methods=['GET','POST'])
+def hornedlizard():
+    if 'id' in session: #세션 내에 email이 있는지 확인
+        id = session.get('id', None)
+    return render_template('/reptile/hornedlizard.html', id=id)
+
+
+
+
+
 
 
 
@@ -126,18 +249,6 @@ def flamingos():
 
 
 
-
-
-
-
-
-
-
-@app.route('/reptile/Basilisklizard', methods=['GET','POST'])
-def Basilisklizard():
-    if 'id' in session: #세션 내에 email이 있는지 확인
-        id = session.get('id', None)
-    return render_template('/reptile/Basilisklizard.html', id=id)
 
 
 
