@@ -2,8 +2,8 @@
 
 <head>
     <title>파우누스</title>
-    <meta chareset="UTF-8">
-        <link rel="stylesheet" href="../../static/css/Basilisklizard.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/Basilisklizard.css">
 </head>
 
 <body bgcolor="#9DDCCE">
@@ -11,24 +11,31 @@
         <div style="position:absolute; left:600; top:20;">
             <a href="/main"><img src="{{url_for('static', filename='image/mini.png') }}" class="mini"></a>
         </div>
-        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button"
+                class="submit" onclick="location.href='/logout'">로그아웃</button></div>
         <div class="back-wrap">
             <div class="ground-wrap">
                 <img src="{{ url_for('static', filename='image/basilisklizard.jpg') }}" class="B-img">
                 <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
                     <div class="font">· 이름 : <font size="5"><B>바실리스크 도마뱀(Basilisk lizard)</B></font><br>
-                    · 수명 : 5년에서 10년<br>
-                    · 크기 : 꼬리를 포함해 약 90cm<br>
-                    · 먹이 : 망고, 바나나 등 과일부터 쥐와 새까지 모두 먹는 잡식성<br>
-                    · 서식지 : 남미에서 북미남부까지 서식<br>
-                    · 부연 설명 : 
-                    바실리스크 도마뱀은 긴 발과 꼬리로 수면 위를 빠르게 달린다. 그 탓에 붙은<br>
-                    별명이 “예수 그리스도 도마뱀” 이다. 이름의 어원은 신화의 괴수인 바실리스크에서 시작<br>
-                    되었다. 바실리스크 도마뱀의 볏 부분이 괴수 바실리스크의 왕관 모양의 볏이 돋친 머리와<br>
-                    닮았다고 하여 바실리스크라는 이름이 붙어졌다. 사진 속 녹색바실리스크 도마뱀의 수컷은<br>
-                    볏과 돛이 크고 암컷은 볏과 돛이 작다.</div></div>
+                        · 수명 : 5~10년<br>
+                        · 크기 : 꼬리를 포함해 약 90cm<br>
+                        · 먹이 : 망고, 바나나 등 과일부터 쥐와 새까지 모두 먹는 잡식성<br>
+                        · 서식지 : 남미에서 북미남부까지 서식<br>
+                        · 부연 설명<br>
+                        :
+                        바실리스크 도마뱀은 긴 발과 꼬리로 수면 위를 빠르게 달린다. 그 탓에 붙은
+                        별명이 “예수 그리<br>
+                        스도 도마뱀” 이다. 이름의 어원은 신화의 괴수인 바실리스크에서 시작
+                        되었다. 바실리스크 도마<br>
+                        뱀의 볏 부분이 괴수 바실리스크의 왕관 모양의 볏이 돋친 머리와
+                        닮았다고 하여 바실리스크라는 <br>
+                        이름이 붙어졌다. 사진 속 녹색바실리스크 도마뱀의 수컷은
+                        볏과 돛이 크고 암컷은 반대로 작다.</div>
+                </div>
             </div>
-            <a href="/reptile/blackmamba"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+            <a href="/reptile/blackmamba"><img src="{{ url_for('static', filename='image/next.png') }}"
+                    class="next"></a>
         </div>
     </div>
 </body>

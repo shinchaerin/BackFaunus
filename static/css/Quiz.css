@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .wrap {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .mini {
+    width: auto;
+    max-width: 230px;
+    position: absolute;
+    right: 35px;
+    top: 5px;
+  }
+  .back-wrap {
+    width: 1200px;
+    height: 1800px;
+    position: relative;
+    margin: 7% auto;
+    background: #E4E8C6;
+    padding: 3px;
+    border-radius: 15px;
+  }
+  .ground-wrap{
+    width: 1000px;
+    height: 1300px;
+    position: relative;
+    margin: 2% auto;
+    background: #ffffff;
+ 
+  }
+  .B-img{
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 200;
+    left: 200;
+  }
+.next{
+    width: auto;
+    max-width: 150px;
+    position:absolute;
+    right: 90px;
+    top: 1650;
+  }
+  .font{
+    font-size: 25px;
+    position:absolute;
+    left:200;
+    top: 600; 
+    line-height: 30px;
+    font-weight: bolder;
+  }
+  .font2{
+    font-size: 20px;
+    position:absolute;
+    left: 200;
+    top:750; 
+    line-height: 30px;
+    font-weight: bolder;
+  }
+  .font3{
+    font-size: 20px;
+    position:absolute;
+    left: 200;
+    top:770; 
+    line-height: 30px;
+    font-weight: bolder;
+  }
+  .font4{
+    font-size: 20px;
+    position:absolute;
+    left: 200;
+    top:775; 
+    line-height: 30px;
+    font-weight: bolder;
+  }
+.busstop{
+    position:absolute;
+    left: 100;
+    top: 1500;
+  }
+  .bus{
+    position:absolute;
+    left: 100;
+    top: 1455;
+  }
+  .bus2{
+    position:absolute;
+    left: 190;
+    top: 1455;
+  }
+  .bus3{
+    position:absolute;
+    left: 300;
+    top: 1455;
+  }
+  .bus4{
+    position:absolute;
+    left: 400;
+    top: 1455;
+  }
+  .bus5{
+    position:absolute;
+    left: 500;
+    top: 1455;
+  }
+  .bus6{
+    position:absolute;
+    left: 600;
+    top: 1455;
+  }
+  .bus7{
+    position:absolute;
+    left: 710;
+    top: 1455;
+  }
+  .bus8{
+    position:absolute;
+    left: 800;
+    top: 1455;
+  }
+  .bus9{
+    position:absolute;
+    left: 900;
+    top: 1455;
+  }
+  .bus10{
+    position:absolute;
+    left: 1000;
+    top: 1455;
+  }

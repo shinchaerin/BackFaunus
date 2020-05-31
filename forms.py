@@ -45,7 +45,7 @@ class LoginForm(FlaskForm):
     pw = PasswordField('pw', validators=[DataRequired(), PasswordCheck()])
 
 
-class QuizForm(FlaskForm):
+class AnswerForm(FlaskForm):
     user_an = StringField('user_an',validators=[DataRequired()])
 
 class BoardForm(FlaskForm):

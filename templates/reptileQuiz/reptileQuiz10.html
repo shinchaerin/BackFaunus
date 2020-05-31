@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>파우누스</title>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../static/css/Quiz.css">
+</head>
+
+<body bgcolor="#9DDCCE">
+    <div class="wrap">
+        <div style="position:absolute; left:600; top:20;"><a href="/main"><img
+                src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+        </div>
+        <div style="font-size: 50%; position:absolute; right:343; top:30;">{{id}}님&nbsp;<button type="button"
+            class="submit" onclick="location.href='/logout'">로그아웃</button></div>
+        <div class="back-wrap">
+            <div class="ground-wrap">
+                <div style="font-size: 17px; position:absolute; left: 350; top:45; line-height: 30px;">
+                    <font size="7"><B>Reptile Test</B></font>
+                </div>
+                <div class="ground-wrap2">
+                    <img src="{{ url_for('static', filename='image/basilisklizard.jpg') }}" class="B-img">
+                </div>
+                <div class="ground-wrap3">
+                    <div class="font">
+                        {{ quiz.question }} <br><br><br>
+                    </div>
+                    <div class="font2">
+                        <form method="POST" action="/reptileQuiz/reptileQuiz10">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="radio" name="gtpQ" value="{{ quiz.first }}">{{ quiz.first }}
+                            <br><br>
+                            <input type="radio" name="gtpQ" value="{{ quiz.second }}" >{{ quiz.second }}
+                            <br><br>
+                            <input type="radio" name="gtpQ" value="{{ quiz.third }}" >{{ quiz.third }}
+                            <br><br>
+                            <input type="radio" name="gtpQ" value="{{ quiz.fourth }}" >{{ quiz.fourth }}
+                            <button type="submit" onclick>답 보내기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="busstop">
+                <img src="{{ url_for('static', filename='image/busstop.png') }}" width="1000">
+            </div>
+            <div class="bus10">
+                <img src="{{ url_for('static', filename='image/bus.png') }}" width="100">
+            </div>
+             <a href="{{ url_for('grade', kind=2) }}"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
+        </div>
+    </div>
+</body>
+
+</html>

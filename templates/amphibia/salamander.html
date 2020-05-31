@@ -1,37 +1,76 @@
 <html>
-<head>
+  <head>
     <title>파우누스</title>
-    <meta chareset="UTF-8">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/birds.css') }}">
-</head>
+    <meta chareset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/birds.css') }}"
+    />
+  </head>
 
-    <body bgcolor="#9DDCCE">
-        <div class="wrap">
-            <div style="position:absolute; left:600; top:20;">
-                <a href="/main"><img src="{{ url_for('static', filename='image/mini.png') }}" class="mini"></a>
+  <body bgcolor="#9DDCCE">
+    <div class="wrap">
+      <div style="position: absolute; left: 600; top: 20;">
+        <a href="/main"
+          ><img
+            src="{{ url_for('static', filename='image/mini.png') }}"
+            class="mini"
+        /></a>
+      </div>
+      <div style="font-size: 50%; position: absolute; right: 343; top: 30;">
+        {{ id }}님
+        <button type="button" class="submit" onclick="location.href='/logout'">
+          로그아웃
+        </button>
+      </div>
+      <div class="back-wrap">
+        <div class="ground-wrap">
+          <img
+            src="{{ url_for('static', filename='image/salamander.png') }}"
+            class="I-img"
+          />
+          <div
+            style="
+              font-size: 17px;
+              position: absolute;
+              left: 120;
+              top: 515;
+              line-height: 30px;
+            "
+          >
+            <div class="font">
+              · 이름 : <font size="5"><b>도룡뇽(Salamander)</b></font
+              ><br />
+              · 수명 : 평균 3~6년<br />
+              · 크기 : 7~9cm(암컷), 8~12cm(수컷)<br />
+              · 먹이 : 작은 곤충, 지렁이 등<br />
+              · 서식지 : 축축한 숲 또는 웅덩이<br />
+              · 부연 설명<br />
+              : 도롱뇽은 ‘물속에 사는 도마뱀’이라는 뜻으로 불린다. 몸은 좁고
+              길며, 꼬리가 길다. 대부분 온대<br />
+              지역에 살며 살갗으로 몸 안의 물기가 빠져 나가기 때문에 덥고 메마른
+              상태에서 견디지 못한다. <br />
+              그래서 여름에는 물기가 있는 곳에서 숨었다가 서늘한 밤에만
+              움직인다.
             </div>
-            <div style="font-size: 50%; position:absolute; right:343; top:30;">{{ id }}님 <button type="button" class="submit" onclick="location.href='/logout'">로그아웃</button></div>
-            <div class="back-wrap">
-                <div class="ground-wrap">
-                    <img src="{{ url_for('static', filename='image/salamander.png') }}" class="I-img">
-                    <div style="font-size: 17px; position:absolute; left: 120; top:515; line-height: 30px;">
-                        <div class="font">· 이름 : <font size="5"><B>도룡뇽(Salamander)</B></font><br>
-                            · 수명 : 평균 3~6년<br>
-                            · 크기 : 7~9cm(암컷), 8~12cm(수컷)<br>
-                            · 먹이 : 작은 곤충, 지렁이 등<br>
-                            · 서식지 : 축축한 숲 또는 웅덩이<br>
-                            · 부연 설명 : 도롱뇽은 ‘물속에 사는 도마뱀’이라는 뜻으로 불린다.<br>
-                            몸은 좁고 길며, 꼬리가 길다.<br>
-                            대부분 온대 지역에 살며 살갗으로 몸 안의 물기가 빠져 나가기 때문에 덥고 메마른 상태에서 견디지 못한다.<br>
-                            그래서 여름에는 물기가 있는 곳에서 숨었다가 서늘한 밤에만 움직인다.
-                        </div>
-                    </div>
-                </div>
-                <div style="width: auto; max-width: 150px;position:absolute;left: 90px;">
-                    <a href="/amphibia/newt"><img src="{{ url_for('static', filename='image/next2.png') }}" width="150"></a>
-                </div>
-                <a href="/amphibia/salamander"><img src="{{ url_for('static', filename='image/next.png') }}" class="next"></a>
-            </div>
+          </div>
         </div>
-    </body>
+        <div
+          style="width: auto; max-width: 150px; position: absolute; left: 90px;"
+        >
+          <a href="/amphibia/newt"
+            ><img
+              src="{{ url_for('static', filename='image/next2.png') }}"
+              width="150"
+          /></a>
+        </div>
+        <a href="/amphibiaQuiz/amphibiaQuiz1" onclick="next()"
+          ><img
+            src="{{ url_for('static', filename='image/next.png') }}"
+            class="next"
+        /></a>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/amphibia.js') }}"></script>
+  </body>
 </html>

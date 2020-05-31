@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .mini {
+    width: auto;
+    max-width: 230px;
+    position: absolute;
+    right: 35px;
+    top: 5px;
+  }
+  .back-wrap {
+    width: 1200px;
+    height: 1800px;
+    position: relative;
+    margin: 7% auto;
+    background: #E4E8C6;
+    padding: 3px;
+    border-radius: 15px;
+  }
+  .ground-wrap{
+    width: 1000px;
+    height: 1500px;
+    position: relative;
+    margin: 2% auto;
+    background: #ffffff;
+
+  }
+  .B-img{
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 65;
+    left: 110;
+  }
+ .mainB{
+  position: absolute;
+  top: 1600;
+  left: 350;
+ }
+
+
+
+ a.animated-button:link:after, a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  top: 10px;
+  width: 60%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+  text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+  height: 100%;
+}
+a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px 13px;
+  font-size:10px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+a.animated-button.gibson-two:after {
+  opacity: 0;
+  background-image: -webkit-linear-gradient( transparent 50%, rgba(101,179,122,0.2) 50%);
+  background-image: -moz-linear-gradient(transparent 50%, rgba(101,179,122,0.2) 50%);
+  background-size: 10px 10px;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.gibson-two:hover:after {
+  height: 300% !important;
+  opacity: 1;
+}
