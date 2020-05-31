@@ -1624,6 +1624,17 @@ def grade(kind=None):
 def bulletinboard():
     if 'id' in session: #세션 내에 email이 있는지 확인
         id = session.get('id', None)
+        u_id = session.get('u_id')
+        print(u_id)
+        if request.method == 'POST':
+            board = Board(request.form['subject'], request.form['contents'])
+            board.u_id = u_id
+            board.views = 0
+            board.heart = 0
+            dbb.session.add(board)
+            dbb.session.commit()
+            return redirect(url_for('all'))
+
     return render_template('/bulletinboard.html', id=id)
 
 

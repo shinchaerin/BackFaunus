@@ -64,11 +64,11 @@
               width="150"
           /></a>
         </div>
-        <a href="/mammaliaQuiz/mammaliaQuiz1" onclick="next()"
+{#        <a href="/mammaliaQuiz/mammaliaQuiz1" onclick="next()"#}
           ><img
-            src="{{ url_for('static', filename='image/next.png') }}"
-            class="next"
-        /></a>
+            src="{{ url_for('static', filename='image/next.png') }}" onclick="next()"
+            class="next"/>
+{#        /></a>#}
       </div>
     </div>
     <script type="text/javascript" src="{{ url_for('static', filename='js/mammalia.js') }}"></script>
